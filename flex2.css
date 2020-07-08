@@ -1,0 +1,21 @@
+#container{
+    display:flex;
+    height:400px;
+    width:400px;
+    background-color: khaki;
+    flex-direction: row;
+    align-items: stretch;
+}
+#container div{
+    height:auto;
+    width:90px;
+}
+#div1{
+    background-color: chartreuse;
+}
+#div2{
+    background-color: crimson;
+}
+#div3{
+    background-color:cyan;
+}

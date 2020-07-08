@@ -81,3 +81,54 @@ body{
     color:blue;
     
 }
+section{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+section:nth-child(2n){
+    background-color: lavender;
+}
+section:nth-child(2n){
+    background-color: lightgray;
+}
+.section-heading{
+    width:auto;
+    padding:20px 10px 10px;
+    font-weight:400;
+}
+.section-heading span{
+    font-size:40px;
+    color:#2857a4;
+    display:inline-block;
+    padding-top: 10px;
+    margin-right:0.5 rem;
+}
+.skills-display{
+    width:70%;
+    display:flex;
+    
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+.skill-progress{
+    width:7rem;
+    height:1.4rem;
+    background-color: white;
+    
+    border-radius:0.8rem;
+}
+.skill-name span{
+    color:white;
+    font-size: 1 rem;
+    margin-left:5px;
+}
+.skill-progress>div{
+    border-radius:0.8rem;
+}
+.eighty-percent{
+    background-color:blue;
+    color:white;
+    width:85%;
+    height:inherit;
+}
