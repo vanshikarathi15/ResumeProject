@@ -115,16 +115,32 @@ section:nth-child(2n){
     width:7rem;
     height:1.4rem;
     background-color: white;
-    
     border-radius:0.8rem;
 }
 .skill-name span{
     color:white;
     font-size: 1 rem;
     margin-left:5px;
+    
+    
 }
 .skill-progress>div{
     border-radius:0.8rem;
+}
+.timeline{
+    position:relative;
+    width: 75%;
+    
+}
+.timeline-box{
+    position:relative;
+    margin:5px;
+    width:40%;
+    left:5%;
+    min-height:150px;
+}
+.timeline-box:nth-child(2n){
+    left:50%;
 }
 .eighty-percent{
     background-color:blue;

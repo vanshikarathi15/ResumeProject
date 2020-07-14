@@ -1,0 +1,26 @@
+a:visited{
+    color:green;
+}
+a:active{
+    color:red;
+}
+p:active{
+    background-color: cyan;
+}
+#box{
+    height:0;
+    width:0;
+    top:0;
+    left:0;
+    position: fixed;
+    overflow: hidden;
+    transition:all 1s ease-out;
+}
+#box:target{
+    top:30%;
+    left:40%;    
+    height:200px;
+    width:200px;
+    background-color: lightcoral;
+    border: 2px solid blue;
+}
