@@ -1,13 +1,18 @@
+*{
+    box-sizing: border-box;
+}
 body{
-    body-margin:0px;
+    margin:0px;
+    
 }
 #body-header{
     height:60vh;
     opacity:0.8;
     background-image: url(jass.jpg);
-    background-position: center;
     background-size:cover;
+    background-position: center;
     background-attachment: fixed;
+    padding-top: 1.1rem;
 }
 .horiz-list{
     list-style: none;
@@ -85,7 +90,12 @@ section{
     width:100%;
     display: flex;
     flex-direction: column;
+    padding-bottom: 4rem;
+    /* padding-left: 6rem; */
+    padding-right: 6 rem;
 }
+
+
 section:nth-child(2n){
     background-color: lavender;
 }
@@ -93,9 +103,10 @@ section:nth-child(2n){
     background-color: lightgray;
 }
 .section-heading{
-    width:auto;
+    width:80vw;
     padding:20px 10px 10px;
     font-weight:400;
+    margin:auto;
 }
 .section-heading span{
     font-size:40px;
@@ -107,7 +118,7 @@ section:nth-child(2n){
 .skills-display{
     width:70%;
     display:flex;
-    
+    align-self:center;
     flex-wrap:wrap;
     justify-content: space-between;
 }
@@ -116,6 +127,7 @@ section:nth-child(2n){
     height:1.4rem;
     background-color: white;
     border-radius:0.8rem;
+    margin-top:2rem;
 }
 .skill-name span{
     color:white;
@@ -129,22 +141,181 @@ section:nth-child(2n){
 }
 .timeline{
     position:relative;
-    width: 75%;
-    
+    width: 100%;
+    height:20%;
+
 }
 .timeline-box{
     position:relative;
     margin:5px;
     width:40%;
     left:5%;
+    font-size:1rem;
+    text-align: justify;
     min-height:150px;
+
+}
+.timeline-divider{
+    position:absolute;
+    height: 90%;
+    width:0%;
+    border:2px dashed gray;
+    top:6%;
+    left:50%;
+}
+.timeline-box:nth-child(2n+1)::after{
+    content: '';
+    position: absolute;
+    top:25%;
+    right:-12.6%;
+    border-radius: 50%;
+    width:0.5rem;
+    height:0.5rem;
+    background-color:gold;
+    z-index: 1;
+}
+.timeline-box:nth-child(2n)::after{
+    content: '';
+    position: absolute;
+    top:30%;
+    left:-1.4%;
+    border-radius: 50%;
+    width:0.5rem;
+    height:0.5rem;
+    background-color:gold;
+    z-index: 1;
 }
 .timeline-box:nth-child(2n){
     left:50%;
+}
+.timeline-traveller{
+    position:sticky;
+    top:30%;
+    z-index: 2;
+    margin: auto;
+}
+.timeline-traveller i{
+    position: relative;
+    right: 12px;
+}
+.experience{
+    font-size: 1.6rem;
+    width:100%;
+    color: indianred;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+#gradient{
+    /* background-image: linear-gradient(55deg,blue, darkblue ,purple 85%); */
+    height:100vh;
+    width:100%;
+    margin:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+#contact{
+    background-image: linear-gradient(55deg,blue, darkblue ,purple 85%);
+}
+.loginbox p{
+    margin:0;
+    padding:0;
+    font-weight:bold;
+    color: white;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    
+}
+.loginbox input{
+    width:100%;
+    margin-bottom:20px;
+}
+.loginbox input[type="text"],input[type="password"]{
+    border:none;
+    border-bottom:1px solid white;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    margin-top:45px;
+}
+.loginbox input[type="submit"]{
+    height:40px;
+    width:30%;;
+    background-color:grey;
+    font-size:1.5rem;
+    font-family: monospace;
+    font-weight:bold;
+
+}
+.loginbox input[type="submit"]:hover{
+    background-color: white;
+}
+.loginbox input[placeholder]{
+    color: white;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+
+}
+.class-section{
+    width:40%;
+}
+#gradient aside h2{
+    font-size:1.8rem;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.flex{
+    display:flex;
+    border:4px solid black;
+    height: 60vh;
+    position: relative;
+    flex-wrap: wrap;
+}
+.item1 {
+    margin:20px 20px;
+    background-image: url("/jass.jpg");
+    position: absolute;
+    height:35%;
+    width:30%;
+    background-size: contain;
+    border:2px solid gray;
+
+}
+.item2 {
+    margin:20px 20px;
+    position: absolute;
+    background-image: url("/manak.jpg");
+    height:35%;
+    width:30%;
+    background-size: contain;
+    border:2px solid gray;
+}
+.item3 {
+    margin:20px 20px;
+    position: absolute;
+    background-image: url("/adidas.jpg");
+    height:35%;
+    border:2px solid gray;
+
+    width:30%;
+    background-size: contain;
 }
 .eighty-percent{
     background-color:blue;
     color:white;
     width:85%;
+    height:inherit;
+}
+.sixty-percent{
+    background-color:blue;
+    color:white;
+    width:60%;
+    height:inherit;
+}
+.forty-percent{
+    background-color:blue;
+    color:white;
+    width:40%;
     height:inherit;
 }

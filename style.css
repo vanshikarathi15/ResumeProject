@@ -1,55 +1,38 @@
-.horiz-list{
-    padding:0px;
-    text-align:center;
+.container{
+    display:flex;
+    border:4px solid black;
+    flex-direction:row;
+    flex-wrap:wrap;
+    height:800px;
     
 }
-.horiz-list li{
-    display:inline-block;
-    margin:0px 18px;
-}
-.horiz-list li a{
+.item{
     color:white;
-    text-decoration:none;
-    font-size: 40px;
-}
-.horiz-list li a:hover{
-    color:lightgray;
-    border-bottom:2px solid white;
-    transition: color 0.5s, border-bottom 1s;
-}
-.size{
-    height:25px;
-    width: 25px;    
+    padding:1rem;
+    font-size:1rem;
 }
 
-#header{
-    height:60vh;
-    opacity:0.8;
-    background-image:url("manak.jpg");
-    background-position:center;
-    background-size: cover;
+.item1{
+    background-color: tomato;
 }
-.center{
-    text-align:center;
-    margin-top: 150px;    
+.item2{
+    background-color: gold;
 }
-#style{
-    font-family: sans-serif;
-    font-size: 80px;
-    font-weight:500;
-    color:white;
-    
-    letter-spacing: 0.3rem;
-    
+.item3{
+    background-color: royalblue;
 }
-#my-image{
-    height:12rem;
-    width:12rem;
+.item4{
+    background-color: forestgreen;
 }
-#my-image img{ 
-    height:100%;
-    width:100%;
-    border-radius:50%;
-    margin:auto;
-    margin-top: -15vh;
+.item5{
+    background-color: fuchsia;
+}
+.item6{
+    background-color: plum;
+}
+.item7{
+    background-color: yellowgreen;
+}
+.item8{
+    background-color: navy;
 }
